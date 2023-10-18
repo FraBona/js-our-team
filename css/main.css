@@ -2,13 +2,46 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgb(245, 245, 241);
+}
+
+img{
+  width: 100%;
+}
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .row{
   display: flex;
   flex-wrap: wrap;
+  margin: 10px 10px;
 }
 
-.user{
+.col-3{
   flex-basis: calc((100% / 12) * 4);
+}
+
+.col-12{
+  margin: 50px 0;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+#titolo {
+  padding: 20px 0px;
+}
+
+#subtitles{
+  color: grey;
+}
+.name{
+  text-align: center;
+  padding: 20px 0;
+}
+.rule{
+  color: grey;
+  text-align: center;
 }
