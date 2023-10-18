@@ -37,13 +37,12 @@ for(let i = 0; i < team.length; i++){
 }
 
 const userDomElement = document.querySelector('.user');
-const clearDomElement = document.querySelector('.clear');
 
 for(let i = 0; i < team.length; i++){
   let nome = team[i].nome;
   let ruolo = team[i].ruolo;
   let foto = team[i].foto;
+  console.log(nome);
 
-  userDomElement.innerHTML += nome + ' ' + ruolo + ' ' + foto + ' ';
-  clearDomElement.innerHTML = '';
+  userDomElement.innerHTML += nome + ' ' + ruolo + ' ' + foto + '<br>';
 }
