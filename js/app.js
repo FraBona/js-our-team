@@ -31,4 +31,19 @@ const team = [
   }
 ]
 
-console.log(team);
+for(let i = 0; i < team.length; i++){
+  let currentUser = team[i];
+  console.log(currentUser);
+}
+
+const userDomElement = document.querySelector('.user');
+const clearDomElement = document.querySelector('.clear');
+
+for(let i = 0; i < team.length; i++){
+  let nome = team[i].nome;
+  let ruolo = team[i].ruolo;
+  let foto = team[i].foto;
+
+  userDomElement.innerHTML += nome + ' ' + ruolo + ' ' + foto + ' ';
+  clearDomElement.innerHTML = '';
+}
