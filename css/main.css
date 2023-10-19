@@ -15,14 +15,14 @@ img{
 }
 
 .row{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
 
-.col-3{
+/*.col-3{
   flex-basis: calc((100% / 12) * 4);
-}
+}*/
 
 .col-12{
   margin: 50px 0;
